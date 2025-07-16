@@ -1,6 +1,18 @@
 # 📋 Padrões de Commits e Branches
 
-Este documento serve como guia de referência para manter a consistência nos commits e branches do projeto.
+## 🎯 Objetivo do Projeto
+
+Este repositório tem como objetivo fornecer um guia completo e prático para padronização de commits e branches em projetos de desenvolvimento de software. O projeto visa:
+
+- **Padronizar** mensagens de commit de forma consistente e legível
+- **Facilitar** a navegação no histórico de mudanças
+- **Melhorar** a colaboração entre desenvolvedores
+- **Automatizar** processos de release e changelog
+- **Aumentar** a qualidade e rastreabilidade do código
+
+## 📖 Sobre este Guia
+
+Este documento serve como guia de referência para manter a consistência nos commits e branches do projeto, seguindo as melhores práticas da comunidade de desenvolvimento.
 
 ## 🌿 Padrões de Branches
 
@@ -197,6 +209,28 @@ git stash pop
 - ❌ Não testar antes do commit
 - ❌ Incluir arquivos temporários ou de configuração local
 - ❌ Misturar diferentes tipos de mudanças em um commit
+
+## 💡 Vantagens dos Padrões de Commit
+
+### 🔍 Rastreabilidade
+- **Histórico claro**: Facilita a compreensão do que foi alterado e quando
+- **Busca eficiente**: Permite encontrar mudanças específicas rapidamente
+- **Debugging**: Ajuda a identificar a origem de bugs e problemas
+
+### 🤝 Colaboração
+- **Comunicação**: Mensagens padronizadas facilitam o entendimento entre a equipe
+- **Code Review**: Revisores conseguem entender o contexto das mudanças
+- **Onboarding**: Novos membros da equipe se adaptam mais rapidamente
+
+### 🤖 Automação
+- **Changelog**: Geração automática de logs de mudanças
+- **Versionamento**: Automação de bumps de versão baseados no tipo de commit
+- **CI/CD**: Triggers automáticos para diferentes tipos de mudanças
+
+### 📊 Métricas
+- **Análise**: Possibilita análise de tipos de mudanças mais frequentes
+- **Produtividade**: Métricas sobre entrega e qualidade do código
+- **Tendências**: Identificação de padrões no desenvolvimento
 
 ## 📚 Referências
 
