@@ -1,5 +1,28 @@
 # 📋 Padrões de Commits e Branches
 
+[![License](https://img.shields.io/github/license/ClaudioMatheusDev/git-commit-conventions)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/ClaudioMatheusDev/git-commit-conventions)](https://github.com/ClaudioMatheusDev/git-commit-conventions/issues)
+[![Actions Status](https://img.shields.io/github/workflow/status/ClaudioMatheusDev/git-commit-conventions/CI/main?label=docs%20CI)](https://github.com/ClaudioMatheusDev/git-commit-conventions/actions)
+
+## Sumário
+
+- [Objetivo do Projeto](#-objetivo-do-projeto)
+- [Guia Rápido](#-guia-rápido)
+- [Padrões de Branches](#-padrões-de-branches)
+- [Padrões de Commits](#-padrões-de-commits)
+- [Comandos Úteis](#-comandos-úteis)
+- [Checklist antes do Commit](#-checklist-antes-do-commit)
+- [Contribuindo](#-contribuindo)
+- [Referências](#-referências)
+
+## 🚀 Guia Rápido
+
+1. Crie uma branch a partir de `develop` com nome seguindo `feature/<nome>` ou `bugfix/<nome>`.
+2. Faça commits pequenos e atômicos seguindo o formato: `tipo(escopo): descrição` (ex: `feat(auth): adiciona login`).
+3. Abra um Pull Request para `develop` com descrição clara e checklist preenchido.
+4. CI rodará validações de documentação; corrija problemas apontados antes do merge.
+
+
 ## 🎯 Objetivo do Projeto
 
 Este repositório tem como objetivo fornecer um guia completo e prático para padronização de commits e branches em projetos de desenvolvimento de software. O projeto visa:

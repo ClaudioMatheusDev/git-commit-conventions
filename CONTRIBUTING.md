@@ -1,3 +1,69 @@
+# Contribuindo
+
+Obrigado por contribuir! Este documento descreve passos e convenções para facilitar PRs e commits.
+
+## Processo de Pull Request
+
+1. Fork ou crie uma branch a partir de `develop`.
+2. Faça commits pequenos e atômicos seguindo o padrão de commit (veja seção abaixo).
+3. Abra um Pull Request apontando para `develop` e selecione o template de PR.
+4. Preencha o checklist do template e aguarde a revisão.
+
+## Convenções de Commit
+
+Este projeto segue o padrão de Conventional Commits. O formato básico é:
+
+```
+<tipo>(<escopo>): <descrição>
+
+<corpo opcional>
+
+<rodapé opcional>
+```
+
+Exemplo: `feat(auth): adiciona login com JWT`
+
+Tipos comuns: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`.
+
+## Validação de commits
+
+Há duas camadas de validação de commit:
+
+- **CI**: um workflow do GitHub Actions valida mensagens de commit automaticamente nas PRs.
+- **Local (opcional, recomendado)**: hooks com `husky` + `commitlint` para bloquear commits locais que não seguem o padrão.
+
+Para habilitar os hooks locais (requer Node.js + npm):
+
+```bash
+# instalar dependências de desenvolvimento
+npm install
+
+# configurar husky (instala os hooks no Git)
+npx husky install
+
+# adicionar o hook de commit-msg (caso não exista)
+npx husky add .husky/commit-msg "npx --no-install commitlint --edit \"$1\""
+```
+
+Após isso, commits que não seguirem o padrão serão rejeitados localmente.
+
+Se preferir apenas validar no CI, não é necessário rodar os passos acima.
+
+## Testes e Lint
+
+Documentação usa validação via GitHub Actions (Markdown lint, checagem de links e spellcheck). Execute localmente conforme as ferramentas que preferir.
+
+## Templates e Issues
+
+Use os templates disponíveis em `.github/` para abrir PRs e Issues.
+
+## Código de Conduta
+
+Veja o arquivo `CODE_OF_CONDUCT.md` para orientações sobre comportamento e respeito na comunidade.
+
+## Contato
+
+Para dúvidas sobre o processo, abra uma issue com a tag `question`.
 # 🤝 Guia de Contribuição
 
 Obrigado por considerar contribuir com o projeto **git-commit-conventions**! Este guia irá ajudá-lo a entender como você pode contribuir para melhorar este repositório.

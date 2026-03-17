@@ -1,0 +1,26 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Super-Linter (markdown + link checks)
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_MARKDOWN: true
+          VALIDATE_LINKS: true
+          DEFAULT_BRANCH: main
+
+      - name: Spellcheck
+        uses: check-spelling/action@v0.0.23
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

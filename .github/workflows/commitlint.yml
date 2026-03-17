@@ -1,0 +1,19 @@
+name: Commit Lint
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Lint commits
+        uses: wagoid/commitlint-github-action@v4
+        with:
+          configFile: commitlint.config.cjs
