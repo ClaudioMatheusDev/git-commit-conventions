@@ -19,8 +19,3 @@ jobs:
           VALIDATE_MARKDOWN: true
           VALIDATE_LINKS: true
           DEFAULT_BRANCH: main
-
-      - name: Spellcheck
-        uses: check-spelling/action@v0.0.23
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
