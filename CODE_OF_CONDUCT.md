@@ -8,4 +8,4 @@ Resumidamente:
 - Evite linguagem ofensiva, assédio ou discriminação.
 - Siga as diretrizes do projeto para contribuições.
 
-Para detalhes completos, recomenda-se adotar o Contributor Covenant (https://www.contributor-covenant.org/).
+Para detalhes completos, recomenda-se adotar o [Contributor Covenant](https://www.contributor-covenant.org/).
